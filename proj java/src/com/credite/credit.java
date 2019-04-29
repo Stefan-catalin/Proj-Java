@@ -1,19 +1,20 @@
 package com.credite;
 
-public class credit {
+public class credit extends rate {
     private int initCash;
     private int endCash;
-    private rate proc;
     private float plataLuna;
 
+    credit(){
+        int initCash = 0;
+        int endCash = 0;
+        float plataLuna = 0;
+    }
     public int getInitCash() {
         return initCash;
     }
     public int getEndCash() {
         return endCash;
-    }
-    public rate getRate() {
-        return proc;
     }
     public float getPlataLuna() {
         return plataLuna;
@@ -25,10 +26,7 @@ public class credit {
     public void setEndCash(int cash) {
         endCash = cash;
     }
-    public void setRate(rate R) {
-        proc = R;
-    }
-    public void setPlataLuna(int cash) {
+    public void setPlataLuna(float cash) {
         plataLuna = cash;
     }
 }

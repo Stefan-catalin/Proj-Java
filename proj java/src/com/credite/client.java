@@ -1,14 +1,21 @@
 package com.credite;
 
-public class client {
+public class client extends credit{
     private String NumeFamile;
     private String NumePers;
     private int varsta;
     private int cnp;
     private String adresa;
     private int numarTelefon;
-    private credit NrPachet;
 
+    client(){
+        NumeFamile="?";
+        NumePers="?";
+        varsta=0;
+        cnp=0;
+        adresa="?";
+        numarTelefon=0;
+    }
     public String getName1() {
         return NumeFamile;
     }
@@ -27,9 +34,6 @@ public class client {
     public int getNumarTelefon() {
         return numarTelefon;
     }
-    public credit getNrPachet() {
-        return NrPachet;
-    }
     public void setName1(String numeFamile) {
         NumeFamile=numeFamile;
     }
@@ -47,9 +51,6 @@ public class client {
     }
     public void setNumarTelefon(int var) {
         numarTelefon = var;
-    }
-    public void setNrPachet(credit Pac) {
-        NrPachet = Pac;
     }
 
 
